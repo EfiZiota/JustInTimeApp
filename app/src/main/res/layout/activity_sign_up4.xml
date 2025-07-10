@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".SignUpActivity4">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="290dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="64dp"
+        android:text="Συμπλήρωσε τα στοιχεία με τα οποία θα συνδέεσαι… "
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/TextColor"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/TextUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/TextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextUsername" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/SignButton"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/custom_button"
+        android:onClick="Confirm"
+        android:text="Επιβεβαίωση"
+        android:textAllCaps="false"
+        android:textColor="@color/TextColor"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextPassword"
+        tools:ignore="OnClick" />
+</androidx.constraintlayout.widget.ConstraintLayout>

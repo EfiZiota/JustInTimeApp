@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="558dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        android:text="Γεια! \nΘέλεις το πακέτο σου;"
+        android:textAlignment="viewStart"
+        android:textColor="@color/TextColor"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/SignUpButton"
+        android:layout_width="197dp"
+        android:layout_height="77dp"
+        android:layout_marginEnd="184dp"
+        android:layout_marginBottom="124dp"
+        android:onClick="CreateAccount"
+        android:text="Δημιούργησε Λογαριασμό"
+        android:textAlignment="center"
+        android:textColor="@color/TextColor"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints,OnClick" />
+
+    <Button
+        android:id="@+id/SignInButton"
+        android:layout_width="167dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="208dp"
+
+        android:layout_marginBottom="132dp"
+        android:onClick="SignIn"
+        android:text="Συνδέσου!"
+        android:textAlignment="center"
+        android:textColor="@color/TextColor"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,OnClick" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="21dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="148dp"
+        android:text="ή"
+        android:textAlignment="center"
+        android:textColor="@color/TextColor"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/SignUpButton"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toEndOf="@+id/SignInButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>

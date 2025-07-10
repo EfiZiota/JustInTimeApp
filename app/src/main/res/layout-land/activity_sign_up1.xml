@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".SignUpActivity1">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="590dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Θα χρειαστούμε μερικά στοιχεία σου… "
+        android:textAlignment="viewStart"
+        android:textColor="@color/TextColor"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/PersonalDetailsButtons"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/custom_button"
+        android:onClick="FillInData"
+        android:text="Προσωπικά Στοιχεία"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/TextColor"
+        android:textSize="18sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+         />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/AddressButton"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_button"
+        android:onClick="FillInAddress"
+        android:text="Διευθύνσεις"
+        android:textAllCaps="false"
+        android:textColor="@color/TextColor"
+        android:textSize="18sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PersonalDetailsButtons"
+         />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/AccountCreatedButton"
+        android:layout_width="188dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/custom_button"
+        android:onClick="CreateAccount"
+        android:text="Όλα έτοιμα!"
+        android:textAllCaps="false"
+        android:textColor="@color/TextColor"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AddressButton"
+         />
+</androidx.constraintlayout.widget.ConstraintLayout>

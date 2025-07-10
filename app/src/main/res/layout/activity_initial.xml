@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".InitialActivity">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="270dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="48dp"
+        android:text="Πως μπορούμε να βοηθήσουμε; "
+        android:textAlignment="viewStart"
+        android:textColor="@color/TextColor"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/profileButton"
+        android:layout_width="200dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="96dp"
+        android:onClick="goToProfile"
+        android:text="Προφίλ"
+        android:textAlignment="center"
+        android:textColor="@color/TextColor"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/MessagesButton"
+        android:layout_width="200dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="16dp"
+        android:text="Εισερχόμενα"
+        android:textAlignment="center"
+        android:textColor="@color/TextColor"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileButton" />
+
+    <Button
+        android:id="@+id/newOrderButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="goToAddOrder"
+        android:text="Εισαγωγή νέας παραγγελίας "
+        android:textAlignment="center"
+        android:textColor="@color/TextColor"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MessagesButton"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/findButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="goToSearchOrder"
+        android:text="Εύρεση παραγγελίας "
+        android:textAlignment="center"
+        android:textColor="@color/TextColor"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newOrderButton" />
+
+    <Button
+        android:id="@+id/historyButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="goToHistoryOrder"
+        android:text="Ιστορικό Παραγγελιών "
+        android:textAlignment="center"
+        android:textColor="@color/TextColor"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/findButton" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signOutButton"
+        android:layout_width="187dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/custom_button_black"
+        android:onClick="SignOut"
+        android:text="Αποσύνδεση"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/TextColor"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
